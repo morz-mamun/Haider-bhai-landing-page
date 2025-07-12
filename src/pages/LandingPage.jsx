@@ -1,8 +1,10 @@
 import { Shield } from "lucide-react";
 import { Star } from "lucide-react";
+import { Shapes } from "lucide-react";
 import { ChartNoAxesGantt } from "lucide-react";
 import { Users } from "lucide-react";
 import { Globe } from "lucide-react";
+import Feature from "../components/Feature";
 
 export const LandingPage = () => {
   return (
@@ -23,7 +25,7 @@ export const LandingPage = () => {
       {/* Content */}
       <div className="relative z-10 min-h-screen flex flex-col max-w-[1440px] mx-auto">
         {/* Header */}
-        <header className="p-6">
+        <header className="py-10 px-3">
           <div className="w-fit text-white font-bold">
             <div className="bg-black border border-white flex items-center">
               <p className="border-r border-white px-[6px]">L</p>
@@ -38,7 +40,7 @@ export const LandingPage = () => {
 
         {/* Main Content */}
         <main className="flex-1 flex items-center">
-          <div className="container mx-auto px-6">
+          <div className="container mx-auto px-3">
             <div className="max-w-2xl">
               {/* Subtitle */}
               <p className="text-white/80 text-sm mb-4 font-light">
@@ -59,8 +61,8 @@ export const LandingPage = () => {
         </main>
 
         {/* Features Section */}
-        <section className="pb-12">
-          <div className="container mx-auto px-6">
+        <section className="pb-16">
+          <div className="container mx-auto px-3">
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl">
               {/* Feature 1 */}
               <Feature
@@ -71,10 +73,10 @@ export const LandingPage = () => {
               <Feature
                 icon={<Star className="text-white" />}
                 title="দরকারি টপিকস"
-                desc=" যাতে প্রয়োজনীয় বিষয় শিখতে সময় নষ্ট না হয়।"
+                desc="যাতে অপ্রয়োজনীয় বিষয় শিখতে গিয়ে সময় নষ্ট না হয়।"
               />
               <Feature
-                icon={<Users className="text-white" />}
+                icon={<Shapes className="text-white" />}
                 title="শিখতে সহজ"
                 desc="যাতে কঠিন থেকে কঠিনতম বিষয়ও একদম সহজ হয়।"
               />     
@@ -86,17 +88,3 @@ export const LandingPage = () => {
   );
 };
 
-function Feature({ icon, title, desc }) {
-  return (
-    <div className="flex items-start space-x-4 max-w-xs">
-      <div className="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center flex-shrink-0 mt-1">
-        {icon}
-        {/* <Shield className="w-5 h-5 text-white" /> */}
-      </div>
-      <div>
-        <h3 className="text-white font-semibold text-lg mb-2">{title}</h3>
-        <p className="text-white/70 text-sm leading-relaxed">{desc}</p>
-      </div>
-    </div>
-  );
-}
