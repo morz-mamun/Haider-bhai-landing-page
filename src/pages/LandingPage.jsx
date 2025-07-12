@@ -1,9 +1,6 @@
-import { Shield } from "lucide-react";
 import { Star } from "lucide-react";
 import { Shapes } from "lucide-react";
 import { ChartNoAxesGantt } from "lucide-react";
-import { Users } from "lucide-react";
-import { Globe } from "lucide-react";
 import Feature from "../components/Feature";
 
 export const LandingPage = () => {
@@ -79,7 +76,7 @@ export const LandingPage = () => {
                 icon={<Shapes className="text-white" />}
                 title="শিখতে সহজ"
                 desc="যাতে কঠিন থেকে কঠিনতম বিষয়ও একদম সহজ হয়।"
-              />     
+              />
             </div>
           </div>
         </section>
@@ -87,4 +84,3 @@ export const LandingPage = () => {
     </div>
   );
 };
-
