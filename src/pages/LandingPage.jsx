@@ -16,7 +16,7 @@ export const LandingPage = () => {
         >
           <source src="/rain-drop.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-black opacity-85" />
+        <div className="absolute inset-0 bg-black opacity-50" />
       </div>
 
       {/* Content */}
